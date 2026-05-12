@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosiale medier og påvirkning - Interaktiv</title>
+  <link rel="stylesheet" href="4interaktiv.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Interaktiv</h1>
+  <div>
+    <a href="1index.html">Forside</a>
+    <a href="2informasjon.html">Informasjon</a>
+    <a href="3forklaring.html">Forklaring</a>
+    <a href="4interaktiv.html">Interaktiv</a>
+  </div>
+</nav>
+
+<style>
+  .pil {
+    cursor: pointer;
+  }
+</style>
+
+<p class="middelplus">Digital Kultur</p>
+
+<div class="midten"></div>
+
+<script>
+  const arrow = document.createElement('span');
+  const text = document.createElement('p');
+
+  arrow.textContent = '>';
+  arrow.className = 'pil';
+  text.textContent = 'Jeg tenker digital kultur er en stor del av hverdagen vår nå, siden vi bruker mobil, spill og sosiale medier hele tiden. Jeg tror det påvirker hvordan vi snakker sammen og hva vi synes er viktig, fordi vi ser så mye forskjellig innhold hver dag. Jeg mener det kan være både bra og dårlig, fordi vi kan lære nye ting og holde kontakt med venner, men også bli distrahert og bruke for mye tid på skjerm i stedet for å være med folk i virkeligheten.';
+  text.className = 'tekst';
+
+  arrow.onclick = () => {
+    const open = text.style.opacity === '0' || text.style.opacity === '';
+    text.style.opacity = open ? '1' : '0';
+    text.style.maxHeight = open ? '500px' : '0';
+    arrow.textContent = open ? 'v' : '>';
+};
+
+  document.querySelector('.midten').append(arrow, text);
+</script>
+
+<p class="mellomrom"></p>
+<p class="middelplus">Statistikk</p>
+<p class="mellomromliten"></p>
+<p class="middel">De mest populære sosiale mediene (2024)</p>
+<img src="Statistikk.png" alt="">
+<p class="mellomromliten"></p>
+
+<button class="knapp" onclick="toggleModus()">Mørk modus</button>
+
+<script>
+  function toggleModus() {
+    const mork = document.body.classList.toggle('mork');
+    document.querySelector('.knapp').textContent = mork ? 'Lys modus' : 'Mørk modus';
+  }
+</script>
+
+</body>
+</html>

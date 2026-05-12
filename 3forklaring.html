@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosiale medier og påvirkning - Forklaring</title>
+  <link rel="stylesheet" href="3forklaring.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Forklaring</h1>
+  <div>
+    <a href="1index.html">Forside</a>
+    <a href="2informasjon.html">Informasjon</a>
+    <a href="3forklaring.html">Forklaring</a>
+    <a href="4interaktiv.html">Interaktiv</a>
+  </div>
+</nav>
+
+<p class="middel-plus">Hvordan sosiale medier påvirker mennesker</p>
+<p class="middel">Jeg tenker sosiale medier påvirker oss mer enn vi tror. Det viser seg at mye tid på sosiale medier kan gjøre at vi begynner å sammenligne oss med andre, og jeg mener det er lett å glemme at folk bare legger ut det beste fra livet sitt. Dette kan påvirke hvordan vi har det med oss selv, og jeg tror mange kan føle seg dårligere uten at de egentlig har noen god grunn til det. Jeg mener også at det kan gjøre at vi føler press til å være perfekte, selv om ingen egentlig er det.</p>
+<p class="middel">Samtidig tenker jeg at sosiale medier ikke bare er negativt, fordi det også kan være en måte å holde kontakt med venner og familie på. Jeg tror mange finner glede i å dele ting fra hverdagen sin og se hva andre gjør, og jeg mener det kan skape et slags fellesskap. Men jeg tenker det er viktig å være litt bevisst på hvor mye tid vi bruker, fordi det er lett å bli sittende lenge uten å merke det, og det kan gå utover andre ting i livet.</p>
+
+<button class="knapp" onclick="toggleModus()">Mørk modus</button>
+
+<script>
+  function toggleModus() {
+    const mork = document.body.classList.toggle('mork');
+    document.querySelector('.knapp').textContent = mork ? 'Lys modus' : 'Mørk modus';
+  }
+</script>
+
+</body>
+</html>

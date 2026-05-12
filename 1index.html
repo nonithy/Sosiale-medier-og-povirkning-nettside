@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosiale medier og påvirkning - Forside</title>
+  <link rel="stylesheet" href="1index.css">
+</head>
+
+<body>
+
+
+<nav>
+  <h1>Sosiale medier og påvirkning</h1>
+  <div>
+    <a href="1index.html">Forside</a>
+    <a href="2informasjon.html">Informasjon</a>
+    <a href="3forklaring.html">Forklaring</a>
+    <a href="4interaktiv.html">Interaktiv</a>
+  </div>
+</nav>
+
+<p class="stor">Introduksjon</p>
+<p class="middel">Sosiale medier er noe nesten alle bruker hver dag. Jeg tror de fleste scroller gjennom Instagram eller TikTok uten å egentlig tenke over hvor mye tid som går.
+På denne nettsiden vil jeg se nærmere på hvordan sosiale medier påvirker oss. Jeg tenker det er viktig å forstå hvordan disse appene er laget for å holde oss inne så lenge som mulig, og hvordan reklame og kjente personer på nettet kan påvirke hva vi kjøper og hvordan vi ser på oss selv.
+Jeg mener dette er et tema som angår alle, spesielt unge.</p>
+<p class="bottom">Bruk menyen øverst for å lese mer</p>
+
+<button class="knapp" onclick="toggleModus()">Mørk modus</button>
+
+<script>
+  function toggleModus() {
+    const mork = document.body.classList.toggle('mork');
+    document.querySelector('.knapp').textContent = mork ? 'Lys modus' : 'Mørk modus';
+  }
+</script>
+
+</body>
+
+</body>
+</html>

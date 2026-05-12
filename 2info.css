@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    padding: 20px 30px;
+    gap: 10px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  margin: 0px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+
+nav a:hover{
+    background: rgb(43, 43, 43);
+    border-radius: 5px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+.stor {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.middel-plus {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.middel {
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.liten {
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.bottom {
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.pil {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.tekst {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, max-height 1s ease;
+}
+
+.midten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pil:hover {
+    background: rgb(43, 43, 43);
+    color: white;
+    border-radius: 5px;
+}
+
+body.mork {
+    background-color: #121212;
+    color: white;
+}
+
+body.mork .tekst {
+    color: white;
+}
+
+body.mork .pil {
+    color: white;
+}
+
+.knapp {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}

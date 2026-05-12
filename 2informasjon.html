@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosiale medier og påvirkning - Informasjon</title>
+  <link rel="stylesheet" href="2info.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Informasjon</h1>
+  <div>
+    <a href="1index.html">Forside</a>
+    <a href="2informasjon.html">Informasjon</a>
+    <a href="3forklaring.html">Forklaring</a>
+    <a href="4interaktiv.html">Interaktiv</a>
+  </div>
+</nav>
+
+<p class="middel-plus">Algoritmer</p>
+<p class="middel">Jeg tror ikke alle vet hva en algoritme egentlig er. Enkelt forklart er det et system som bestemmer hva du ser når du åpner for eksempel TikTok eller Instagram. Den lærer seg hva du liker og viser deg mer av det, slik at du blir værende lenger på appen. Jeg synes det er litt skummelt hvor godt disse systemene kjenner vanene våre, og jeg tror mange ikke tenker over hvor mye de faktisk blir påvirket av det de ser. Samtidig mener jeg det er viktig å være litt bevisst på dette, så vi ikke bare ser det algoritmen velger for oss.</p>
+
+<p class="middel-plus">Medievaner</p>
+<p class="middel">Jeg tenker medievanene våre har forandret seg veldig de siste årene. Før så folk på tv eller leste aviser, men nå konsumerer de fleste innhold gjennom telefonen sin. Jeg merker selv at jeg kan bruke mye tid på å scrolle uten at jeg egentlig bestemte meg for det, og jeg tror det er lett å miste litt kontroll på hvor mye tid som går. Jeg mener også at vi blir vant til å få korte og raske inntrykk hele tiden, noe som kan gjøre det vanskeligere å fokusere lenge på én ting.</p>
+
+<button class="knapp" onclick="toggleModus()">🌙 Mørk modus</button>
+
+<script>
+  function toggleModus() {
+    const mork = document.body.classList.toggle('mork');
+    document.querySelector('.knapp').textContent = mork ? 'Lys modus' : 'Mørk modus';
+  }
+</script>
+
+</body>
+</html>
